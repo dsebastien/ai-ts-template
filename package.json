@@ -1,0 +1,35 @@
+{
+	"name": "TODO",
+	"version": "0.1.0",
+	"description": "TODO",
+	"scripts": {
+		"css": "TODO",
+		"css:watch": "TODO",
+		"dev": "TODO",
+		"dev:watch": "TODO",
+		"devw": "npm run dev:watch",
+		"build": "TODO",
+		"tsc": "tsc --noEmit",
+		"tsc:watch": "tsc --noEmit --watch --preserveWatchOutput",
+		"tscw": "npm run tsc:watch",
+		"version": "TODO"
+	},
+	"keywords": [
+		"ai",
+		"asr",
+		"speech-to-text",
+		"transcription"
+	],
+	"author": "DeveloPassion",
+	"devDependencies": {
+		"@tailwindcss/cli": "4.1.14",
+		"@types/node": "24.7.0",
+		"@typescript-eslint/eslint-plugin": "5.29.0",
+		"@typescript-eslint/parser": "5.29.0",
+		"builtin-modules": "3.3.0",
+		"concurrently": "9.2.1",
+		"tailwindcss": "4.1.14",
+		"tslib": "2.4.0",
+		"typescript": "5.9.3"
+	}
+}
