@@ -1,0 +1,63 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "module": "ESNext",
+    "target": "ES6",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "isolatedModules": true,
+    "lib": [
+      "DOM",
+      "ES5",
+      "ES6",
+      "ES7"
+    ],
+
+    // Strict Type-Checking Options
+    "strict": true,                           // Enable all strict type-checking options
+    "noImplicitAny": true,                    // Included in strict, but explicit for clarity
+    "strictNullChecks": true,                 // Included in strict, but explicit for clarity
+    "strictFunctionTypes": true,              // Included in strict
+    "strictBindCallApply": true,              // Included in strict
+    "strictPropertyInitialization": true,     // Included in strict
+    "noImplicitThis": true,                   // Included in strict
+    "alwaysStrict": true,                     // Included in strict
+
+    // Additional Strict Checks (not included in "strict")
+    "noUnusedLocals": true,                   // Report errors on unused local variables
+    "noUnusedParameters": true,               // Report errors on unused parameters
+    "noImplicitReturns": true,                // Report error when not all code paths return a value
+    "noFallthroughCasesInSwitch": true,       // Report errors for fallthrough cases in switch
+    "noUncheckedIndexedAccess": true,         // Include 'undefined' in index signature results
+    "noImplicitOverride": true,               // Ensure overriding members are marked with override
+    "noPropertyAccessFromIndexSignature": true, // Require indexed access for dynamic property names
+    "allowUnusedLabels": false,               // Report errors on unused labels
+    "allowUnreachableCode": false,            // Report errors on unreachable code
+
+    // Module Resolution & Interop
+    "esModuleInterop": true,                  // Emit additional JS for CommonJS/ES modules interop
+    "forceConsistentCasingInFileNames": true, // Ensure imports have correct casing
+    "resolveJsonModule": true,                // Allow importing .json files
+    "skipLibCheck": false,                    // Check all .d.ts files (including node_modules)
+
+    // Code Quality
+    "noEmitOnError": true,                    // Don't emit output if there are errors
+    "declaration": false,                     // Don't generate .d.ts files (not needed for plugins)
+    "declarationMap": false,                  // Don't generate .d.ts.map files
+
+    // Allow JavaScript (for migration purposes, can be disabled later)
+    "allowJs": false,                         // Only allow TypeScript files
+    "checkJs": false                          // Don't check JavaScript files
+  },
+  "include": [
+    "src/**/*.ts",
+    "*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ]
+}
